@@ -1,0 +1,2 @@
+Package Name:chapter-page
+Use: chapter-page redefines \thepage in the book class so that it takes the form ChapterNumber--PageNumber.
