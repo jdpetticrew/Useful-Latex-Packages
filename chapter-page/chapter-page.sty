@@ -1,0 +1,10 @@
+\ProvidesPackage{chapter-page}
+\RequirePackage{etoolbox}
+
+\appto{\mainmatter}{\renewcommand*{\thepage}{\thechapter-\arabic{page}}}
+\patchcmd{\@chapter}{\if@mainmatter}{\if@mainmatter\setcounter{page}{1}}{}{}
+% If \backmatter is used
+\appto{\backmatter}{%
+  \renewcommand*{\thepage}{\arabic{page}}%
+  \setcounter{page}{1}%
+}
