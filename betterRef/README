@@ -1,4 +1,5 @@
 Package Name: betterRef
 Use: betterRef redefines the bibliography environment so that it does the following:
   1) Names it References
-  2) Adds it to ToC as a section*.
+  2) Changes it from a Chapter* to a Section*.
+  3) Adds it to ToC.
