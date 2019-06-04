@@ -1,0 +1,12 @@
+\ProvidesPackage{lined}
+\RequirePackage{ulem}
+
+\newcommand{\lined}[1]% #1 = paragraph text
+{\bgroup
+  \setbox0=\vbox{\strut #1}%
+  \loop\ifdim\ht0>0pt
+    \setbox1=\vsplit0 to \ht\strutbox
+    \noindent\strut\box1
+    \vspace{-1pt}\hrule\vskip 1pt % aesthetic tweak
+  \repeat
+\egroup}
