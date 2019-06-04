@@ -1,0 +1,2 @@
+Package Name: lined
+Provides a command \lined{} which will underline all text inside and extend the lines to the margins.
