@@ -18,3 +18,11 @@
         \label{#6}
     \end{figure}
 }
+
+\newcommand{\standaloneFig}[3]{
+	\ifstandalone
+	\includegraphics[#1]{#3}
+	\else
+	\includegraphics[#1]{./#2/#3}
+	\fi
+}
