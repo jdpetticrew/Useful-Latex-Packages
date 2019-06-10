@@ -1,4 +1,11 @@
 Package Name: multiFig
-Use: Contains Macros for multiple subfigures in the same figure
+Use: Contains Macros for multiple subfigures in the same figure and use with standalone
+
+Produce 2 images side-by-side
 
 \sidebysideFigures{image1}{subCaption1}{image2}{subCaption2}{Main Caption}{label}
+
+Include an image when stanalone is in use and the structure is ./MainFolder/ChapterFolder 
+when the main file is in MainFolder and the standalone chapters and their images are in the ChapterFolder
+
+\standaloneFig{options}{ChapterFolder}{image}
