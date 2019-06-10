@@ -9,3 +9,5 @@ Include an image when stanalone is in use and the structure is ./MainFolder/Chap
 when the main file is in MainFolder and the standalone chapters and their images are in the ChapterFolder
 
 \standaloneFig{options}{ChapterFolder}{image}
+Standalone version of side-by-side
+\sidebysidestandaloneFigures{ChapterFolder}{image1}{subCaption1}{image2}{subCaption2}{Main Caption}{label}
